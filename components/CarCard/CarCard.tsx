@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { CarProps } from '@/types';
 import CustomButton from '../CustomButton';
 import { calculateCarRent } from '@/utils';
+import CarDetails from '../CarDetails';
 
 interface CarCardProps{
   car: CarProps
@@ -52,14 +53,14 @@ const CarCard = ({car}:CarCardProps) => {
               </p>
             </div>
 
-            <div className='flex flex-col justify-center items-center gap-2 ml-52'>
+            <div className='flex flex-col justify-center items-center gap-2 ml-12'>
               <Image src="/tire.svg" width={20} height={20} alt='tire'/>
               <p className='text-[14px]'>
                 {drive.toUpperCase()}
               </p>
             </div>
 
-            <div className='flex flex-col justify-center items-center gap-2 ml-48'>
+            <div className='flex flex-col justify-center items-center gap-2 ml-12'>
               <Image src="/GAS.svg" width={20} height={20} alt='steering wheel'/>
               <p className='text-[14px]'>
                 {city_mpg} MPG
@@ -81,9 +82,10 @@ const CarCard = ({car}:CarCardProps) => {
 
       </div>
 
-      
+      <CarDetails isOpen = {isOpen} closeModal = {() =>
+      setIsOpen(false)} car={car} />
     </div>
   )
 }
 
-export default CarCard
+export default CarCard;

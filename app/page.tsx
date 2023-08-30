@@ -9,6 +9,7 @@ import Image from 'next/image'
 export default async function Home() {
 
   const allCars = await fetchCars();
+  
 
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
