@@ -192,11 +192,11 @@
 }
 
 .searchbar__item {
-  @apply flex-1 max-sm:w-full flex justify-start items-center relative;
+  @apply flex-1 max-sm:w-full flex justify-start items-center  relative;
 }
 
 .searchbar__input {
-  @apply w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm;
+  @apply w-full h-[48px] pl-12  bg-slate-200 rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm ml-1;
 }
 /* END: searchbar styles */
 
@@ -206,7 +206,7 @@
 }
 
 .search-manufacturer__input {
-  @apply w-full h-[44px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-slate-200 outline-none cursor-pointer text-sm;
+  @apply w-full h-[44px] pl-12 p-6 rounded-l-full max-sm:rounded-full bg-slate-200 outline-none cursor-pointer text-sm;
 }
 
 .search-manufacturer__options {
