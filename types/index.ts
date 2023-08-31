@@ -11,9 +11,16 @@ export interface CustomButtonProps {
 }
 
 export interface SearchManufacturerProps {
-    manufacturer: string;
-    setManufacturer: (manufacturer: string) =>void;
+    selected: string;
+    setSelected: (manufacturer: string) =>void;
 }
+
+export interface SearchBarProps {
+  setManufacturer: (manufacturer: string) =>void;
+  setModel: (model: string) =>void;
+}
+
+
 
 export interface CarProps {
     city_mpg:number;

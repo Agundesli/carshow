@@ -6,7 +6,7 @@ import { SearchManufacturerProps } from '@/types'
 import { manufacturers } from '@/constants'
 import Image from 'next/image'
 
-const SearchManufacturer = ({manufacturer,setManufacturer}:SearchManufacturerProps) => {
+const SearchManufacturer = ({selected,setSelected}:SearchManufacturerProps) => {
 
   const [query, setQuery] = useState('');
 
@@ -21,7 +21,7 @@ const SearchManufacturer = ({manufacturer,setManufacturer}:SearchManufacturerPro
 
   return (
     <div className='search-manufacturer'>
-      <Combobox value={manufacturer} onChange={setManufacturer}>
+      <Combobox value={selected} onChange={setSelected}>
       <div className='relative w-full'>
 
         
